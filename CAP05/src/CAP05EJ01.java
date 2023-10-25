@@ -3,7 +3,7 @@ public class CAP05EJ01 {
         int intervaloMin=0;
         int intervaloMax=100;
         int multiplos=5;
-        for (int i = intervaloMin; i <=intervaloMax; i++) {
+        for (int i = intervaloMin; i <=intervaloMax; i+=multiplos) {
             System.out.println(i);
         }
     }

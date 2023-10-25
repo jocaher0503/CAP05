@@ -4,9 +4,7 @@ public class CAP05EJ26 {
       long numeroIntroducido = Integer.parseInt(System.console().readLine());
       System.out.print("Introduzca un dígito: ");
       int digito = Integer.parseInt(System.console().readLine());
-      System.out.print("Contando de izquierda a derecha, el " + digito);
-      System.out.println(" aparece dentro de " + numeroIntroducido);
-      System.out.print("en las siguientes posiciones: ");
+      System.out.print("Contando de izquierda a derecha, el " + digito + " aparece dentro de " + numeroIntroducido + " en las siguientes posiciones: ");
       long numero = numeroIntroducido;
       numero = numero * 10 + 1;
       long volteado = 0;
