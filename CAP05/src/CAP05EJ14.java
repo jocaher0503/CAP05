@@ -21,6 +21,6 @@ public class CAP05EJ14 {
       }
       potencia = 1/potencia;
     }
-    System.out.println(base + "^" + exponente + " = " + potencia);
+    System.out.printf(base + "^" + exponente + " = " + potencia);
   }
 }
