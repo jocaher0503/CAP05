@@ -1,24 +1,25 @@
 public class CAP05EJ19 {
-  public static void main(String[] args) {
-    System.out.print("Por favor, introduzca la altura de la pirámide: ");
-    int alturaIntroducida = Integer.parseInt(System.console().readLine());
-    System.out.print("Introduzca el carácter de relleno: ");
-    String relleno = System.console().readLine();
-    int planta = 1;
-    int longitudDeLinea = 1;
-    int espacios = alturaIntroducida-1;
-    while (planta <= alturaIntroducida) {
-      for (int i = 1; i <= espacios; i++) {
+  public static void piramide (int altura, String caracter, boolean inversa){
+    int direccion=(inversa)?-1:1;
+    int primera=(inversa)?altura:1;
+    int ultima=(inversa)?1:altura;
+    for (int i=primera; inversa?i>=ultima:i<=ultima; i=i+direccion) {
+      for(int j=1;j<=(altura-i);j++){
         System.out.print(" ");
       }
-      for (int i = 1; i <= longitudDeLinea; i++) {
-        System.out.print(relleno);
+      for(int j=1; j<=(2*i-1);j++){
+        System.out.print(caracter);
       }
     System.out.println();
-    planta++;
-    espacios--;
-    longitudDeLinea += 2;
     }
+  }
+  public static void main(String[] args) {
+    System.out.print("Por favor, introduzca la altura de la pirámide: ");
+    int altura= Integer.parseInt(System.console().readLine());
+    System.out.print("Introduzca el carácter de relleno: ");
+    String caracter = ""+System.console().readLine().charAt(0);
+    piramide(altura, caracter, false);
+    
   }
 }
 
