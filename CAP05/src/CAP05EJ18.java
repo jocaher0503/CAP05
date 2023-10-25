@@ -8,8 +8,7 @@ public class CAP05EJ18 {
       System.out.print("Introduzca otro número entero distinto al anterior: ");
       segundoNumero = Integer.parseInt(System.console().readLine());
     if(primerNumero == segundoNumero) {
-      System.out.print("Los números introducidos no son válidos, ");
-      System.out.println(" deben ser distintos.");
+      System.out.print("Los números introducidos no son válidos, deben ser distintos.");
       }
     } while (primerNumero == segundoNumero);
     if (primerNumero > segundoNumero) {
