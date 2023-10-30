@@ -1,4 +1,21 @@
 public class CAP05EJ25 {
+  public static int longitud(int valor){
+    int retorno=0;
+    boolean salida= false;
+    while (!salida) {
+      retorno++;
+      if (valor<10)
+        salida=true;
+      else
+        valor=valor/10;
+    }
+    return retorno;
+  }
+
+
+
+
+
   public static int voltea (int valor){
     int alreves=0;
     boolean salida= false;
