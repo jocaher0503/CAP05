@@ -1,4 +1,6 @@
 public class CAP05EJ25 {
+  //Esto es por si me hace falta en otro ejercicio
+  
   public static int longitud(int valor){
     int retorno=0;
     boolean salida= false;
@@ -14,7 +16,7 @@ public class CAP05EJ25 {
 
 
 
-
+  //Este es el ejercicio
 
   public static int voltea (int valor){
     int alreves=0;
