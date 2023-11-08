@@ -1,14 +1,18 @@
 public class CAP05EJ56 {
-    public static void imprimeTriangulo(int altura){
-        for (int i=1; i<=altura-1; i++) {
-            for(int j=1; j<=i; j++)
+    public static void imprimeTriangulo(int altura) {
+        for(int i=0; i<=altura-1; i++){
+            for(int j=1;j<=i;j++)
                 System.out.print(" ");
-            for(int j=1; j<=altura-1; j++)
+            for(int j=1;j<=altura-i; j++)
                 System.out.print("*");
-        System.out.println();
+                
+            System.out.println();    
         }
     }
+
     public static void main(String[] args) {
-        
+        System.out.println("Introduzca la altura de la figura: ");
+        int altura = Integer.parseInt(System.console().readLine());
+        imprimeTriangulo(altura);
     }
 }
