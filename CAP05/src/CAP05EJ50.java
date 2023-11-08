@@ -12,7 +12,7 @@ public class CAP05EJ50 {
         System.out.printf(format," "," ");
     }
     public static void main(String[] args) {
-        System.out.println("Introduzca la altura (5 como mínimo): ");
+        System.out.print("Introduzca la altura (5 como mínimo): ");
         int altura = Integer.parseInt(System.console().readLine());
         if(altura<5)
             System.out.println("La altura debe ser mayor o igual a 5");
