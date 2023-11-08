@@ -3,8 +3,7 @@ public class CAP05EJ53 {
         for(int i=0; i<altura; i++){
             for(int j=1;j<=altura-i; j++)
                 System.out.print("*");
-            System.out.println();    
-
+            System.out.println();
         }
     }
     public static void main(String[] args) {
