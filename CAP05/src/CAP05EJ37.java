@@ -1,18 +1,4 @@
 public class CAP05EJ37 {
-    public static long solicitaValor(String question, String error){
-        boolean validado = false;
-        long valor = 0;
-        while(!validado){
-            try {
-                System.out.print(question);
-                valor = Long.parseLong(System.console().readLine());
-                validado = true;    
-            } catch (Exception e) {
-                System.out.println(error);
-            }
-        }
-        return valor;
-    }
     public static long voltea(long valor){
         long alreves = 0;
         boolean salida = false;
@@ -26,22 +12,27 @@ public class CAP05EJ37 {
         }
         return alreves;
     }
-    public static void convertirPalotes(){
+    public static void convertirPalotes(int valor){
         boolean salida=false;
+        int digito;
         while (!salida) {
-            for (int i=0; i<; i++) {
-                
+            if(valor>=0){
+                digito=(valor%10);
+            for(int i=1; i>=digito-1; i++)
+                digito=valor%10;
+                valor=valor/10;
+            for(int j=1; j<=digito; j++)
+                System.out.print("|");
             }
+            if (valor>0){
+                System.out.print("-");
+            }
+            else salida=true;
         }
     }
-    public static void main(String[] args) {
-        boolean validado=false;
-        while(!validado){
-            long valor = solicitaValor("Por favor, introduzca un número entero positivo: ","Error.");
-            if(valor < 0){
-                System.out.println("Error");
-            }
-            else validado = true;
-        }
+    public static void main(String[] args){
+        System.out.print("Introduzca un número entero positivo: ");
+        int valor=Integer.parseInt(System.console().readLine());
+        voltea(valor);convertirPalotes(valor);
     }
 }
