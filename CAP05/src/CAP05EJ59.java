@@ -16,8 +16,6 @@ public class CAP05EJ59 {
                 }
                 System.out.print(caracter);
             }
-
-            
             System.out.println();
         }
     }

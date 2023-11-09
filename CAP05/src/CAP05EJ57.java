@@ -13,7 +13,6 @@ public class CAP05EJ57 {
             System.out.println();    
         }
     }
-
     public static void main(String[] args) {
         System.out.println("Introduzca la altura de la figura: ");
         int altura = Integer.parseInt(System.console().readLine());
